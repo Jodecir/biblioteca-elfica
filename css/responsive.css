@@ -1,0 +1,30 @@
+@media (max-width: 800px) {
+  .container {
+    margin-top: 0;
+  }
+
+  .card-container {
+    flex-direction: column-reverse;
+  }
+
+  .container .card-container:nth-child(1),
+  .container .card-container:nth-child(3) {
+    flex-direction: column;
+  }
+
+  .card {
+    height: 300px;
+    width: 300px;
+  }
+
+  .card-text{
+    width: 70%;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .card:hover > .card-wrapper::before {
+    height: 190px;
+    width: 290px;
+  }
+}
