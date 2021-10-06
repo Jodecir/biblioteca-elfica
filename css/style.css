@@ -63,6 +63,13 @@ a:active, a:hover {outline: 0;}
 
 a:visited , a:link {color: var(--brancoAcizentado);}
 
+/* IMAGES */
+
+.imgMedia {
+  width: 300px;
+  height: 300px;
+}
+
 /* TITLES */
 
 .title {
@@ -94,6 +101,116 @@ a:visited , a:link {color: var(--brancoAcizentado);}
   height: 3px;
   background: #fff;
   margin: 14px auto 10px auto;
+}
+
+/* CARDS */
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+}
+
+.card {
+  height: 300px;
+  width: 300px;
+  margin: 18px 0 20px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 4px double var(--brancoAcizentado);
+  filter: grayscale(0.5);
+  color: var(--branco);
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 20px var(--branco);
+  transition-duration: 1s;
+}
+
+.card-text {
+  width: 40%;
+  font-family: sans-serif;
+  color: var(--brancoAcizentado);
+  border: 5px dashed var(--brancoAcizentado);
+  padding: 35px;
+  border-radius: 10px 10px;
+}
+
+.card-text li {
+  list-style-type: square;
+  font-size: 18px;
+  margin: 8px;
+}
+
+.card-text i {
+  padding: 6px;
+}
+
+.card-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.card-extra {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card-wrapper::before {
+  content: '';
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  display: block;
+  border: 1px solid var(--branco);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.card-wrapper h3 {
+  color: var(--preto);
+  background-color: var(--amarelo);
+  padding: 2px;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0;
+  transition: 0.3s;
+}
+
+.card-wrapper p {
+  font-size: 0;
+  visibility: hidden;
+  opacity: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.card:hover {
+  filter: unset;
+}
+
+.card:hover > .card-wrapper::before {
+  height: 250px;
+  width: 350px;
+  opacity: 1;
+}
+
+.card:hover > .card-wrapper p {
+  opacity: 1;
+  visibility: visible;
+  font-size: 14px;
 }
 
 /* FOOTER */
