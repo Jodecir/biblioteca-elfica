@@ -20,12 +20,12 @@ Esse repositório é uma recriação de uma das minhas avaliações em Desenvolv
 * [:active](https://developer.mozilla.org/pt-BR/docs/Web/CSS/:active)
 * [:visited](https://developer.mozilla.org/pt-BR/docs/Web/CSS/:visited)
 * [:link](https://developer.mozilla.org/pt-BR/docs/Web/CSS/:link)
-* [:checked](https://developer.mozilla.org/pt-BR/docs/Web/CSS/:checked)
 * [::before](https://developer.mozilla.org/pt-BR/docs/Web/CSS/::before)
 * [::after](https://developer.mozilla.org/pt-BR/docs/Web/CSS/::after)
 * [transition](https://www.w3schools.com/css/css3_transitions.asp)
 * [transform](https://www.w3schools.com/cssref/css3_pr_transform.asp)
 * [opacity](https://www.w3schools.com/css/css_image_transparency.asp)
+* [@keyframes](https://developer.mozilla.org/pt-BR/docs/Web/CSS/@keyframes)
 
 #### Contatos:
 
