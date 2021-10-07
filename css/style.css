@@ -213,6 +213,97 @@ a:visited , a:link {color: var(--brancoAcizentado);}
   font-size: 14px;
 }
 
+/* TABELA */
+
+table {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 28px;
+  width: 90%;
+  border: var(--preto) solid 4px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 10px 0 10px 0;
+}
+
+table td {
+  padding: 2%;
+	border: 2px solid var(--preto);
+}
+
+.reflexo {
+	transition: all 0.5s;
+	position: relative;
+	overflow: hidden;
+}
+
+.reflexo:before {
+  content: '';
+	background-color: var(--branco);
+	top: 0;
+	left: 0;
+	width: 100%;
+	position: absolute;
+	transform: translateX(-100%) rotate(45deg);
+	transition: all 1.7s;
+}
+
+.reflexo:hover:before {
+	height: 25px;
+ 	transform: translateX(100%) rotate(45deg);
+}
+
+.disponivel {
+    transform: scale(1);
+    animation: pulse 2s infinite;
+}
+
+.indisponivel:hover {
+  transform: scale(1);
+  animation: shake 0.3s linear;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(.95);
+  }
+  55% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(.95);
+  }
+}
+
+@keyframes shake {
+	33% { transform: rotate(10deg); }
+
+	66% { transform: rotate(-10deg); }
+
+	100% { transform: rotate(10deg); }
+}
+
+table th {
+  background-color: var(--branco);
+  letter-spacing: 1.5px;
+  color: var(--preto);
+  text-align: left;
+  padding: 2%;
+	border: 2px solid var(--preto);
+}
+
+table tr:nth-child(even) {
+  background-color: var(--brancoAcizentado);
+}
+
+table tr:nth-child(odd) {
+  background-color: var(--preto);
+  color: var(--branco);
+}
+
+table tr:hover {
+  background-color: var(--azulEscuro);
+}
+
 /* FOOTER */
 
 footer {
@@ -234,4 +325,11 @@ footer i:hover {
 footer a {
   text-decoration: none;
   color: var(--branco);
+}
+
+/* OUTROS */
+
+#centralizar {
+  justify-content: center;
+  text-align: center;
 }
