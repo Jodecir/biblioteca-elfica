@@ -1,3 +1,17 @@
+@media (max-width: 1100px) {
+  iframe {
+    width: 800px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1000px) {
+  iframe {
+    width: 600px;
+    height: 400px;
+  }
+}
+
 @media (max-width: 800px) {
   .container {
     margin-top: 0;
@@ -26,5 +40,17 @@
   .card:hover > .card-wrapper::before {
     height: 190px;
     width: 290px;
+  }
+
+  iframe {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  iframe {
+    width: 300px;
+    height: 200px;
   }
 }
