@@ -225,9 +225,31 @@ table {
   margin: 10px 0 10px 0;
 }
 
-table td {
+td {
   padding: 2%;
 	border: 2px solid var(--preto);
+}
+
+table th {
+  background-color: var(--branco);
+  letter-spacing: 1.5px;
+  color: var(--preto);
+  text-align: left;
+  padding: 2%;
+	border: 2px solid var(--preto);
+}
+
+table tr:nth-child(even) {
+  background-color: var(--brancoAcizentado);
+}
+
+table tr:nth-child(odd) {
+  background-color: var(--preto);
+  color: var(--branco);
+}
+
+table tr:hover {
+  background-color: var(--azulEscuro);
 }
 
 .reflexo {
@@ -280,28 +302,6 @@ table td {
 	66% { transform: rotate(-10deg); }
 
 	100% { transform: rotate(10deg); }
-}
-
-table th {
-  background-color: var(--branco);
-  letter-spacing: 1.5px;
-  color: var(--preto);
-  text-align: left;
-  padding: 2%;
-	border: 2px solid var(--preto);
-}
-
-table tr:nth-child(even) {
-  background-color: var(--brancoAcizentado);
-}
-
-table tr:nth-child(odd) {
-  background-color: var(--preto);
-  color: var(--branco);
-}
-
-table tr:hover {
-  background-color: var(--azulEscuro);
 }
 
 /* IFRAME GOOGLE MAPS */
