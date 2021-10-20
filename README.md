@@ -16,6 +16,7 @@ Esse repositório é uma recriação de uma das minhas avaliações em Desenvolv
 ### Recursos CSS:
 
 * [:root](https://www.w3schools.com/cssref/sel_root.asp)
+* [:nth-child](https://www.w3schools.com/cssref/sel_nth-child.asp)
 * [:hover](https://www.w3schools.com/cssref/sel_hover.asp)
 * [:active](https://developer.mozilla.org/pt-BR/docs/Web/CSS/:active)
 * [:visited](https://developer.mozilla.org/pt-BR/docs/Web/CSS/:visited)
