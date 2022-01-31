@@ -362,11 +362,11 @@ footer {
   text-align: center;
 }
 
-footer i {
-  padding: 15px;
+footer svg {
+  padding: 10px;
 }
 
-footer i:hover {
+footer svg:hover {
   transform: scale(1.15);
 }
 
